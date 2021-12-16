@@ -1,0 +1,13 @@
+{% extends "EncuestasApp/base.html" %}
+
+{% block contenido %}
+
+    <form action="/encuesta/buscar" method="GET">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Buscar Curso</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </form>
+
+{% endblock %}

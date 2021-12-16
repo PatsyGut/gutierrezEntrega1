@@ -1,0 +1,33 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+    <a href="{% url 'EncuestasApp:Inicio' %}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <i class="bi bi-check" style="font-size: 2rem; color: cornflowerblue;"></i>
+        <span class="fs-4">Entrega 1</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+            <a href="{% url 'EncuestasApp:Buscar' %}" class="nav-link active" aria-current="page">
+                <i class="bi bi-search"></i>
+                Buscar Curso
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'EncuestasApp:ModalidadForm' %}" class="nav-link text-white">
+                <i class="bi bi-input-cursor-text"></i>
+                Formulario Modalidad
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'EncuestasApp:CursoForm' %}" class="nav-link text-white">
+                <i class="bi bi-input-cursor-text"></i>
+                Formulario Curso
+            </a>
+        </li>
+        <li>
+            <a href="{% url 'EncuestasApp:EncuestaForm' %}" class="nav-link text-white">
+                <i class="bi bi-input-cursor-text"></i>
+                Formulario Encuesta
+            </a>
+        </li>
+    </ul>
+</div>
